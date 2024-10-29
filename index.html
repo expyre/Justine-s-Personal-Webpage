@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justine Gelindon's Website</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./textRotate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <script defer src="app.js"></script>
     <link rel="icon" href="./img/GelindsSmallLogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
                 <img src="./img/pic-removebg.png" alt="">
             </div>
             <div class="Homepage__content">
-            <h3>Hi there, my name is</h3>
+            <h3 >Hi there, my name is</h3>
             <span><h1>JUSTINE </h1></span>
             <h1> GELINDON</h1>
              <div class="rotating-text">
@@ -52,27 +52,30 @@
     </header>
      <!--END OF NAVBAR-->
 <main class="et-main">
-   <section class="AboutPage" id="about">
+   <section class="AboutPage hidden" id="about">
     <div class="container">
-        <div class="aboutpage__wrapper">
+        <div class="aboutpage__wrapper" >
             <div class="aboutpage__content">
                 <h1>ABOUT ME</h1>
-                <p>Hey there! This is Justine Gelindon, a <span>programmer and editor</span> with a serious passion for making things look cool and run smoothly.  After graduating from San Pablo Colleges, Justine Gelindon dove headfirst into the world of motion graphics and editing. Basically, I can code like a whiz and make your videos pop!</p>
-                <br>
-                <p><span>Known for their editing skills and academic achievements</span>, I'm always pushing for greatness, no matter the project.  Outside of work, the programming, motion graphics, and editing bug continues!  This well-rounded individual loves a good challenge, especially when it involves a passion.  Whether it's coding a new program or editing the perfect video, I bring an enthusiastic and growth-oriented mindset to everything I do. Get ready to meet someone who's both inspiring and constantly learning!</p>
+                <ul class="about__text">
+                    <li> <p>Hey there! This is Justine Gelindon, a <span>programmer and editor</span> with a serious passion for making things look cool and run smoothly.  After graduating from San Pablo Colleges, Justine Gelindon dove headfirst into the world of motion graphics and editing. Basically, I can code like a whiz and make your videos pop!</p></li>
+                    <br>
+                    <li><p><span>Known for their editing skills and academic achievements</span>, I'm always pushing for greatness, no matter the project.  Outside of work, the programming, motion graphics, and editing bug continues!  This well-rounded individual loves a good challenge, especially when it involves a passion.  Whether it's coding a new program or editing the perfect video, I bring an enthusiastic and growth-oriented mindset to everything I do. Get ready to meet someone who's both inspiring and constantly learning!</p></li>
+                </ul>
+               
             </div>
         </div>
     </div>
    </section>
 
-   <section class="ExperiencePage" id="exp">
+   <section class="ExperiencePage" id="exp" class="view">
     <!--START EXPERIENCE PAGE-->
     <div class="Exp">
     <div class="container">
-        <div class="exp__wrapper">
+        <div class="exp__wrapper hidden">
             <h1>EXPERIENCE</h1>
             <h3>Work Immersion Experience at Frontline Business Solutions Inc.</h3>
-            <div class="exp__content">
+            <div class="exp__content hidden">
             <div class="picLeft">
                 <img src="./img/fbs pic.jpg" alt="">
             </div>
@@ -87,98 +90,87 @@
 <!--END OF EXPERIENCE PAGE-->
 
 <!--START OF SKILLS PAGE-->
-    <div class="skills">
+    <div class="skills hidden">
         <div class="container">
-            <div class="skills__wrapper">
+            <div class="skills__wrapper hidden">
                 <h2>SKILLS</h2>
-                <div class="skills-area">
-
-                <div class="skill">
-                    <div class="info">
-                        <p>Computer Programming</p>
-                        <p class="percent">45%</p>
-                    </div>
-                    <div class="Comprogbar">
-                        <span class="Comprog"></span>
-                    </div>
+                <div class="skills-chart" >
+                    <ul class="skills" id="skillsSection">
+                        <li class="chart">
+                            <span class="chart__label">
+                                <p class="info">Computer Programming <span class="cent"> 45%</span></p>
+                            </span>
+                            <div class="chart__bar" style="--final-width:45%;"></div>
+                            
+                        </li>
+                        <li class="chart">
+                            <span class="chart__label">
+                                <p class="info">Video Editing<span class="cent"> 70%</span></p>
+                            </span>
+                            <div class="chart__bar" style="--final-width:70%;"></div>
+                        </li>
+                        <li class="chart">
+                            <span class="chart__label">
+                                <p class="info">Motion Graphics <span class="cent"> 50%</span></p>
+                            </span>
+                            <div class="chart__bar" style="--final-width: 50%;"></div>
+                        </li>
+                        <li class="chart">
+                            <span class="chart__label">
+                                <p class="info">Web Design<span class="cent"> 50%</span></p>
+                            </span>
+                            <div class="chart__bar" style="--final-width:50%;"></div>
+                        </li>
+                        <li class="chart">
+                            <span class="chart__label" >
+                                <p class="info">Web Development<span class="cent"> 50%</span></p>
+                            </span>
+                            <div class="chart__bar" style="--final-width:45%;"></div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="skill">
-                    <div class="info">
-                        <p>Video Editing</p>
-                        <p class="percent">70%</p>
-                    </div>
-                    <div class="editbar">
-                        <span class="edit"></span>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="info">
-                        <p>Motion Graphics</p>
-                        <p class="percent">50%</p>
-                    </div>
-                    <div class="mographbar">
-                        <span class="mograph"></span>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="info">
-                        <p>Web Design</p>
-                        <p class="percent">35%</p>
-                    </div>
-                    <div class="webDesbar">
-                        <span class="webDes"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p>Web Development</p>
-                        <p class="percent">35%</p>
-                    </div>
-                    <div class="webDevbar">
-                        <span class="webDev"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> 
     </div>
 </div>
 <!--END OF SKILLS PAGE-->
 
 
 <!--START OF PORTFOLIO PAGE-->
-<div class="portfolio">
+<div class="portfolio" class="view">
     <div class="container">
-        <div class="port__wrapper">
+        <div class="port__wrapper hidden">
             <h1>PORTFOLIO</h1>
             <div class="port__content">
                 <div class="port__top">
                     <div class="portThumb">
-                <a href="https://en.wiktionary.org/wiki/to_be_continued#:~:text=Phrase,in%20narration%20or%20in%20reality."><img src="./img/comprog.jpg" alt=""></a>
-                <div class="imageOv"><h2>Computer Programming</h2></div>
+                <a href="https://en.wiktionary.org/wiki/to_be_continued#:~:text=Phrase,in%20narration%20or%20in%20reality."><img src="./img/comprog.jpg" alt="">
+                 <div class="imageOv"><h2>Computer Programming</h2></div>
+            </a>    
             </div>
 
             <div class="portThumb">
-                <a href="https://youtube.com/playlist?list=PLFngM2LTD-VgPZ457S6pBhyG49SE0lluS&si=8zTL-hPtIdOfnEeh"><img src="./img/vid edit.jpg" alt=""></a>
-                <div class="imageOv">Video Editing</div>
+                <a href="https://youtube.com/playlist?list=PLFngM2LTD-VgPZ457S6pBhyG49SE0lluS&si=8zTL-hPtIdOfnEeh"><img src="./img/vid edit.jpg" alt="">
+                <div class="imageOv"> <h2>Video Editing</h2></div>
+            </a>
             </div>
 
                 <div class="portThumb">
-               <a href="https://drive.google.com/drive/folders/1gxeAl-7-bqVG58fGLklzGamuzj1tw7t8?usp=sharing"><img src="./img/motion graphics.jpg" alt=""></a>
+               <a href="https://drive.google.com/drive/folders/1gxeAl-7-bqVG58fGLklzGamuzj1tw7t8?usp=sharing"><img src="./img/motion graphics.jpg" alt="">
                <div class="imageOv"><h2>Motion Graphics</h2></div>
+            </a>
         </div>
 
                 <div class="port__bottom">
                     <div class="portThumb">
-                <a href="https://www.figma.com/proto/iTq4hKn7O7qTvxvzhqX8k0/Inside-Style?node-id=11-45&starting-point-node-id=11%3A45&t=arIPEMwobVT57rtr-1"><img src="./img/web des.jpg" alt=""></a>
+                <a href="https://www.figma.com/proto/iTq4hKn7O7qTvxvzhqX8k0/Inside-Style?node-id=11-45&starting-point-node-id=11%3A45&t=arIPEMwobVT57rtr-1"><img src="./img/web des.jpg" alt="">
                 <div class="imageOv"><h2>Web Design</h2></div>
+            </a>
             </div>
 
                 <div class="portThumb">
-                <a href="https://github.com/expyre"><img src="./img/web dev.jpg" alt=""></a>
+                <a href="https://github.com/expyre"><img src="./img/web dev.jpg" alt="">
                 <div class="imageOv"><h2>Web Development</h2></div>
+                </a>
             </div>
             </div>
             </div>
@@ -189,7 +181,7 @@
 
 
   
-   <section class="ContactPage" id="cont">
+   <section class="ContactPage hidden" id="cont" class="view">
     <div class="container">
         <div class="contact__wrapper">
             <h2>CONTACT ME</h2>
@@ -218,9 +210,9 @@
    </section>
 
    <footer class="footer">
-    <div class="container">
+    <div class="container"> 
         <div class="footer__wrapper">
-            <h1>Copyright &#169 Justine Gelindon Personal Website</h1>
+            <h1>Copyright &#169 Justine Gelindon's Personal Website</h1>
             <div class="footerLine"></div>
             <ul>
                 <li><a href="https://www.facebook.com/lmk.jstn"><i class="fa-brands fa-facebook"></i></a></li>
